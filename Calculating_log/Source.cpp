@@ -5,7 +5,7 @@ int main(int argc, wchar_t* argv[]) {
 
 	double a = 92992326, b = 11.562346;
 
-	double r;  //9.553112
+	double r;
 
 	r = log(a) / log(b);
 
@@ -19,7 +19,7 @@ int main(int argc, wchar_t* argv[]) {
 	double p = 1.0;
 	for (int i = 0; i < 60; i++) {
 		aa *= aa;
-		p /= 2.0;
+		p *= 0.5;
 		if (aa > b) { ri += p; aa *= ib; }
 	}
 
